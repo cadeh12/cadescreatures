@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url("hero-background.png");
+    background-size: cover;
+    height: 150vh;
+}
+
+header {
+    width: 90%;
+    max-width: 1200px;
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #031926;
+    margin: 1rem auto;
+    color: #9DBEBB;
+    font-family: "Montserrat Subrayada", sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 10px 10px rgba(0 0 0 / 40%);
+    position: sticky;
+}
+
+.icon-title {
+    color: #9DBEBB;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    gap: 1rem;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.gecko-icon {
+    height: 3rem;
+}
+
+.apos {
+    font-family: "Montserrat", sans-serif;
+}
+
+nav {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    color: #9DBEBB;
+}
+
+.hero {
+    width: 80%;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1200px;
+    gap: 2rem;
+}
+
+.hero-left {
+    width: 60%;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.hero-blurb {
+    color: #D7B29D;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 125%;
+}
+
+.hero-image {
+    width: 100%;
+    min-width: 20rem;
+    box-shadow: 0 10px 10px 10px rgba(0 0 0 / 25%);
+}
+
+.view-collection {
+    background-color: #FF9000;
+    border: none;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-family: "Montserrat Subrayada", sans-serif;
+    font-size: 1.25rem;
+    scale: 1;
+    transition: scale 0.5s ease-in-out;
+}
+
+.view-collection:hover {
+    cursor: pointer;
+    scale: 1.1;
+    transition: scale 0.5s ease-in-out;
+}
+
+.abt-encl {
+    display: flex;
+    flex-direction: row;
+}
+
+.about {
+    background-color: #031926;
+    width: 30%;
+}
+
+.builds {
+    background-color: #5A6650;
+    width: 70%;
+}
