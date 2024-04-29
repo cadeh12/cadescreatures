@@ -55,6 +55,13 @@ nav {
 
 a {
     text-decoration: none;
+    scale: 1;
+    transition: scale 0.25s ease-in-out;
+}
+
+a:hover {
+    scale: 1.05;
+    transition: scale 0.25s ease-in-out;
 }
 
 .link {
@@ -95,6 +102,16 @@ a {
     box-shadow: 0 10px 10px 10px rgba(0 0 0 / 25%);
 }
 
+button {
+    scale: 1;
+    transition: scale 0.25s ease-in-out;
+}
+
+button:hover {
+    scale: 1.05;
+    transition: scale 0.25s ease-in-out;
+}
+
 .view-collection {
     background-color: #FF9000;
     border: none;
@@ -108,8 +125,8 @@ a {
 
 .view-collection:hover {
     cursor: pointer;
-    scale: 1.1;
-    transition: scale 0.5s ease-in-out;
+    scale: 1.05;
+    transition: scale 0.25s ease-in-out;
 }
 
 .abt-encl {
