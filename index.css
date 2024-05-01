@@ -158,15 +158,15 @@ button:hover {
     width: 70%;
 }
 
-
-
 .build-examples {
     display: flex;
     flex-direction: row;
+    gap: 1rem;
+    
 }
 
 .build-img {
-    height: 50%;
+    width: 25%;
 }
 
 .enclosure-designs {
