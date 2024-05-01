@@ -124,6 +124,7 @@ button {
 button:hover {
     scale: 1.05;
     transition: scale 0.25s ease-in-out;
+    cursor: pointer;
 }
 
 .abt-encl {
@@ -145,7 +146,7 @@ button:hover {
     color: var(--cambridge-blue);
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
@@ -163,9 +164,10 @@ button:hover {
     font-weight: bold;
     font-size: 2.5rem;
     color: var(--desert-sand);
+    width: fit-content;
     position: relative;
-    left: 40%;
-    top: 5%;
+    left: 35%;
+    top: 1rem;
 }
 
 .build-examples {
@@ -178,6 +180,7 @@ button:hover {
 .build-img {
     width: 25%;
     height: 25%;
+    box-shadow: 0 5px 5px 5px rgba(0 0 0 / 25%);
 }
 
 #build1 {
@@ -196,6 +199,52 @@ button:hover {
     position: relative;
     top: -2rem;
     left: 4rem;
+}
+
+.genetics {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.morph {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: var(--desert-sand);
+    width: fit-content;
+    position: relative;
+    top: 1rem;
+}
+
+.genetics-img {
+    width: 40%;
+    height: 40%;
+}
+
+.gen-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: -4rem;
+}
+
+#cap-traits {
+    margin-top: 6rem;
+}
+
+.gen-info {
+    position: relative;
+    left: 60%;
+    bottom: 3rem;
+}
+
+footer {
+    background-color: var(--prussian-blue);
+}
+
+.socials {
+    width: 40%;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 900px) {
