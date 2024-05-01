@@ -162,11 +162,16 @@ button:hover {
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    
+    justify-content: space-around;
+    border: 2px solid black;
 }
 
 .build-img {
     width: 25%;
+}
+
+#build1 {
+    
 }
 
 .enclosure-designs {
