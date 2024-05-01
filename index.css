@@ -137,8 +137,8 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    padding: 2rem;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .meet {
@@ -150,7 +150,7 @@ button:hover {
 }
 
 .abt-pic {
-    width: 90%;
+    width: 80%;
 }
 
 .builds {
@@ -158,27 +158,44 @@ button:hover {
     width: 70%;
 }
 
+.enclosure-designs {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: var(--desert-sand);
+    position: relative;
+    left: 40%;
+    top: 5%;
+}
+
 .build-examples {
     display: flex;
     flex-direction: row;
     gap: 1rem;
     justify-content: space-around;
-    border: 2px solid black;
 }
 
 .build-img {
     width: 25%;
+    height: 25%;
 }
 
 #build1 {
-    
+    margin-top: 0;
 }
 
-.enclosure-designs {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: bold;
-    font-size: 2rem;
-    color: var(--desert-sand);
+#build2 {
+    margin-top: 3rem;
+}
+
+#build3 {
+    margin-top: 6rem;
+}
+
+.view-builds {
+    position: relative;
+    top: -2rem;
+    left: 4rem;
 }
 
 @media screen and (max-width: 900px) {
