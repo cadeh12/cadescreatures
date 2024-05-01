@@ -3,8 +3,17 @@
     margin: 0;
 }
 
+:root {
+    --cambridge-blue: #9DBEBB;
+    --princeton-orange: #FF9000;
+    --prussian-blue: #031926;
+    --desert-sand: #D7B29D;
+    --ebony: #5A6650;
+
+}
+
 body {
-    background-image: url("hero-background.png");
+    background-image: url("img/hero-background.png");
     background-size: cover;
     height: 150vh;
 }
@@ -15,9 +24,9 @@ header {
     padding: 0.5rem 1.5rem;
     display: flex;
     flex-direction: row;
-    background-color: #031926;
+    background-color: var(--prussian-blue);
     margin: 1rem auto;
-    color: #9DBEBB;
+    color: var(--cambridge-blue);
     font-family: "Montserrat Subrayada", sans-serif;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +35,7 @@ header {
 }
 
 .icon-title {
-    color: #9DBEBB;
+    color: var(--cambridge-blue);
 }
 
 .logo {
@@ -65,7 +74,7 @@ a:hover {
 }
 
 .link {
-    color: #9DBEBB;
+    color: var(--cambridge-blue);
 }
 
 .hero {
@@ -89,11 +98,12 @@ a:hover {
 
 
 .hero-blurb {
-    color: #D7B29D;
+    color: var(--desert-sand);
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 3rem;
     font-weight: bold;
     line-height: 125%;
+    margin-bottom: 2rem;
 }
 
 .hero-image {
@@ -105,26 +115,13 @@ a:hover {
 button {
     scale: 1;
     transition: scale 0.25s ease-in-out;
+    background-color: var(--princeton-orange);
+    border: none;
+    font-family: "Montserrat Subrayada", sans-serif;
+    font-size: 1.5rem;
 }
 
 button:hover {
-    scale: 1.05;
-    transition: scale 0.25s ease-in-out;
-}
-
-.view-collection {
-    background-color: #FF9000;
-    border: none;
-    margin-top: 1rem;
-    padding: 0.5rem;
-    font-family: "Montserrat Subrayada", sans-serif;
-    font-size: 1.25rem;
-    scale: 1;
-    transition: scale 0.5s ease-in-out;
-}
-
-.view-collection:hover {
-    cursor: pointer;
     scale: 1.05;
     transition: scale 0.25s ease-in-out;
 }
@@ -135,11 +132,69 @@ button:hover {
 }
 
 .about {
-    background-color: #031926;
+    background-color: var(--prussian-blue);
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.meet {
+    color: var(--cambridge-blue);
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.abt-pic {
+    width: 90%;
 }
 
 .builds {
-    background-color: #5A6650;
+    background-color: var(--ebony);
     width: 70%;
+}
+
+
+
+.build-examples {
+    display: flex;
+    flex-direction: row;
+}
+
+.build-img {
+    height: 50%;
+}
+
+.enclosure-designs {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--desert-sand);
+}
+
+@media screen and (max-width: 900px) {
+    header {
+        margin: 0;
+        width: 100%;
+    }
+    nav {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--ebony);
+        height: 100vh;
+        position: absolute;
+        right: 0;
+        top: 0;
+        gap: 2rem;
+        justify-content: flex-start;
+        padding: 2rem;
+    }
+    .link {
+        color: var(--desert-sand);
+    }
 }
