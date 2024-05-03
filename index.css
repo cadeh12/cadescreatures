@@ -16,7 +16,6 @@
 body {
     background-image: url("img/hero-background.png");
     background-size: cover;
-    height: 150vh;
 }
 
 header {
@@ -80,6 +79,7 @@ a:hover {
 
 .link {
     color: var(--cambridge-blue);
+    font-size: clamp(0.75rem, 1.5vw, 1rem)
 }
 
 .hero {
@@ -98,7 +98,7 @@ a:hover {
 .hero-blurb {
     color: var(--desert-sand);
     font-family: "Montserrat Alternates", sans-serif;
-    font-size: 3rem;
+    font-size: clamp(1rem, 4vw, 3rem);
     font-weight: bold;
     line-height: 125%;
     margin-bottom: 2rem;
@@ -115,7 +115,7 @@ button {
     background-color: var(--princeton-orange);
     border: none;
     font-family: "Montserrat Subrayada", sans-serif;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2vw, 2rem);
 }
 
 button:hover {
@@ -143,7 +143,7 @@ button:hover {
     color: var(--cambridge-blue);
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     text-align: center;
 }
 
@@ -159,12 +159,12 @@ button:hover {
 .enclosure-designs {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     color: var(--desert-sand);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-right: 20%;
+    margin-right: 10%;
     margin-top: 1rem;
 }
 
@@ -208,7 +208,7 @@ button:hover {
 .morph {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     color: var(--desert-sand);
     margin-top: 1rem;
 }
@@ -253,7 +253,7 @@ footer {
     color: var(--cambridge-blue);
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
     header {
         margin: 0;
         width: 100%;
@@ -290,6 +290,10 @@ footer {
     }
     .link {
         color: var(--desert-sand);
+        font-size: clamp(1rem, 2vw, 2vw);
+    }
+    button {
+        font-size: clamp(1.5rem, 2vw, 2.5rem);
     }
     .hero {
         width: 100%;
@@ -328,6 +332,9 @@ footer {
     .about {
         width: 100%;
     }
+    .meet {
+        font-size: clamp(2.5rem, 2vw, 3.5rem);
+    }
     .builds {
         width: 100%;
         display: flex;
@@ -337,6 +344,8 @@ footer {
     .enclosure-designs {
         margin: 0;
         margin-top: 1rem;
+        text-align: center;
+        font-size: clamp(2.5rem, 2vw, 3.5rem);
     }
     .build-examples {
         margin: 1rem 0;
@@ -364,6 +373,7 @@ footer {
     .morph {
         margin: 1rem 0;
         text-align: center;
+        font-size: clamp(2.5rem, 2vw, 3.5rem);
     }
     .gen-imgs {
         margin: 0;
