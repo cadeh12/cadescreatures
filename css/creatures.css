@@ -1,14 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100vw;
+}
+
+:root {
+    --cambridge-blue: #9DBEBB;
+    --princeton-orange: #FF9000;
+    --prussian-blue: #031926;
+    --desert-sand: #D7B29D;
+    --ebony: #5A6650;
+}
+
 body {
     background-image: url("../img/creatures-background.png");
     background-size: cover;
 }
 
-main {
+.row {
     width: 90%;
     margin: 0 auto;
-}
-
-.row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -26,49 +37,104 @@ main {
 }
 
 .geck:hover {
-    scale: 1.5;
+    scale: 1.75;
     transition: scale 0.25s ease-in-out;
 }
 
 .name {
     position: absolute;
-    top: 2.5%;
+    top: 2%;
     left: 5%;
-    font-size: clamp(0.5rem, 1.5vw, 1.25rem);
+    font-size: clamp(0.4rem, 1.25vw, 1.25rem);
+}
+
+.breeder {
+    position: absolute;
+    top: 12.5%;
+    left: 5%;
+    font-size: clamp(0.2rem, 0.6vw, 0.6rem);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.geck:hover .breeder {
+    display: flex;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .lineage {
     position: absolute;
-    top: 15%;
+    top: 17.5%;
     left: 5%;
-    font-size: clamp(0.4rem, 0.8vw, 0.8rem);
+    font-size: clamp(0.2rem, 0.6vw, 0.6rem);
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
 .geck:hover .lineage {
-    display: flex;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+}
+
+.parent {
+    color: var(--cambridge-blue);
+    text-decoration: underline;
 }
 
 .sex {
     float: right;
-    margin: 5%;
+    margin: 2%;
     width: 15%;
 }
 
-.weight-morph {
+.wmd {
     position: absolute;
     bottom: 5%;
     left: 5%;
-    font-size: clamp(0.5rem, 1vw, 1rem);
+    font-size: clamp(0.25rem, 0.75vw, 0.75rem);
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
-.geck:hover .weight-morph {
+.geck:hover .wmd {
     display: flex;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        margin-bottom: 2rem;
+    }
+    .row {
+        width: 80%;
+        flex-direction: column;
+        padding: 0;
+        gap: 2rem;
+        padding-bottom: 2rem;
+
+    }
+    .geck {
+        width: 100%;
+    }
+    .geck:hover {
+        scale: 1;
+    }
+    .name {
+        font-size: 1.5rem;
+    }
+    .breeder {
+        opacity: 1;
+        font-size: 0.75rem;
+        top: 12%;
+    }
+    .lineage {
+        opacity: 1;
+        font-size: 0.75rem;
+    }
+    .wmd {
+        opacity: 1;
+        font-size: 1rem;
+    }
 }
