@@ -32,7 +32,6 @@ body {
     position: relative;
     font-family: "Montserrat Alternates", sans serif;
     color: white;
-    background-color: black;
     transition: scale 0.25s ease-in-out;
 }
 
@@ -101,6 +100,103 @@ body {
     display: flex;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+}
+
+#carl {
+    background-image: url('../img/geckos/carl.png');
+    background-size: contain;
+}
+#caspian {
+    background-image: url('../img/geckos/caspian.png');
+    background-size: contain;
+}
+#chance {
+    background-image: url('../img/geckos/chance.png');
+    background-size: contain;
+}
+#circe {
+    background-image: url('../img/geckos/circe.png');
+    background-size: contain;
+}
+#clark {
+    background-image: url('../img/geckos/clark.png');
+    background-size: contain;
+}
+#cornelius {
+    background-image: url('../img/geckos/cornelius.png');
+    background-size: contain;
+}
+#cowlick {
+    background-image: url('../img/geckos/cowlick.png');
+    background-size: contain;
+}
+#carcir23-21 {
+    background-image: url('../img/geckos/carcir23-21.png');
+    background-size: contain;
+}
+#carcir23-31 {
+    background-image: url('../img/geckos/carcir23-31.png');
+    background-size: contain;
+}
+#carcir23-41 {
+    background-image: url('../img/geckos/carcir23-41.png');
+    background-size: contain;
+}
+#carcow23-11 {
+    background-image: url('../img/geckos/carcow23-11.png');
+    background-size: contain;
+}
+#carcow23-21 {
+    background-image: url('../img/geckos/carcow23-21.png');
+    background-size: contain;
+}
+#cascow22-22 {
+    background-image: url('../img/geckos/cascow22-22.png');
+    background-size: contain;
+}
+#cascow22-41 {
+    background-image: url('../img/geckos/cascow22-41.png');
+    background-size: contain;
+}
+#cascow22-42 {
+    background-image: url('../img/geckos/cascow22-42.png');
+    background-size: contain;
+}
+#cascow22-51 {
+    background-image: url('../img/geckos/cascow22-51.png');
+    background-size: contain;
+}
+#cascow22-71 {
+    background-image: url('../img/geckos/cascow22-71.png');
+    background-size: contain;
+}
+#cascow22-72 {
+    background-image: url('../img/geckos/cascow22-72.png');
+    background-size: contain;
+}
+#cascow22-31 {
+    background-image: url('../img/geckos/cascow22-31.png');
+    background-size: contain;
+}
+#cascow22-11 {
+    background-image: url('../img/geckos/cascow22-11.png');
+    background-size: contain;
+}
+#cascow22-12 {
+    background-image: url('../img/geckos/cascow22-12.png');
+    background-size: contain;
+}
+#cascow22-61 {
+    background-image: url('../img/geckos/cascow22-61.png');
+    background-size: contain;
+}
+#cascow22-62 {
+    background-image: url('../img/geckos/cascow22-62.png');
+    background-size: contain;
+}
+#cascow22-32 {
+    background-image: url('../img/geckos/cascow22-32.png');
+    background-size: contain;
 }
 
 @media screen and (max-width: 700px) {
