@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100vw;
+}
+
+:root {
+    --cambridge-blue: #9DBEBB;
+    --princeton-orange: #FF9000;
+    --prussian-blue: #031926;
+    --desert-sand: #D7B29D;
+    --ebony: #5A6650;
+}
+
+body {
+    background-image: url("../img/creatures-background.png");
+    background-size: cover;
+}
