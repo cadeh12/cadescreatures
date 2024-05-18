@@ -16,3 +16,104 @@ body {
     background-image: url("../img/creatures-background.png");
     background-size: cover;
 }
+
+main {
+    min-height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.fillout {
+    text-align: center;
+    color: var(--prussian-blue);
+    font-family: "Montserrat Alternates", sans serif;
+    width: 75%;
+    margin: 2rem auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    margin: 2rem auto;
+    background-color: var(--prussian-blue);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.inquiry {
+    align-self: center;
+    color: var(--cambridge-blue);
+    font-family: "Montserrat Alternates", sans serif;
+    font-size: 2rem;
+}
+
+.label {
+    color: var(--cambridge-blue);
+    font-family: "Montserrat Alternates", sans serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.submit {
+    border: none;
+    color: var(--prussian-blue);
+    background-color: var(--princeton-orange);
+    font-family: "Montserrat Subrayada", sans serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    justify-self: center;
+    width: fit-content;
+    align-self: center;
+    cursor: pointer;
+    scale: 1;
+    transition: scale 0.25s ease-in-out;
+}
+
+.submit:hover {
+    scale: 1.25;
+    transition: scale 0.25s ease-in-out;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+div input {
+    flex-grow: 1;
+    background-color: var(--cambridge-blue);
+    border: 1px solid var(--ebony);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.thanks {
+    text-align: center;
+    color: var(--ebony);
+    font-family: "Montserrat Alternates", sans serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 75%;
+    margin: 2rem auto;
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .fillout {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+    .thanks {
+        font-size: 1.25rem;
+    }
+    form {
+        width: 90%;
+    }
+}
+

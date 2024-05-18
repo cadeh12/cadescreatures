@@ -17,6 +17,10 @@ body {
     background-size: cover;
 }
 
+main {
+    margin: 2rem 0;
+}
+
 .row {
     width: 90%;
     margin: 0 auto;
@@ -85,6 +89,20 @@ body {
     float: right;
     margin: 2%;
     width: 15%;
+}
+
+.psex {
+    float: right;
+    font-size: clamp(0.15rem, 0.5rem, 0.5rem);
+    text-align: center;
+    margin: 4%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.geck:hover .psex {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .wmd {
@@ -219,6 +237,10 @@ body {
     }
     .name {
         font-size: 1.5rem;
+    }
+    .psex {
+        opacity: 1;
+        font-size: 0.9rem;
     }
     .breeder {
         opacity: 1;

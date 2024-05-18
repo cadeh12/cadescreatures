@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inquire</title>
     <link rel="icon" href="../gecko.ico">
     <link rel="stylesheet" href="../head-foot.css">
     <link rel="stylesheet" href="../css/inquire.css">
@@ -33,11 +33,28 @@
         </div>
     </header>
     <main>
-        <form action="" method="POST">
+        <h1 class="fillout">Please fill out the form below indicating which gecko(s) you are interested in acquiring:</h1>
+        <form action="https://script.google.com/macros/s/AKfycbx-8AAWSvyf8aetpjBmUb05Hi6D-VeO3aqlnynm3xJ0_oUG4N9Ns12LsdBpjXU3NCeP/exec" method="POST" name="inquiry-form">
+            <h2 class="inquiry">Gecko Inquiry Form</h2>
             <div>
-                <label for="gecko">Gecko</label>
+                <label for="name" class="label">Name:</label>
+                <input type="text" name="name" id="name">
             </div>
+            <div>
+                <label for="gecko-input" class="label">Gecko(s):</label>
+                <input type="text" name="gecko(s)" id="gecko-input">
+            </div>
+            <div>
+                <label for="email" class="label">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="comments">
+                <label for="comments-input" class="label">Comments (optional):</label>
+                <input type="text" name="comments" id="comments-input">
+            </div>
+            <input type="submit" value="Submit" class="submit">
         </form>
+        <p class="thanks">Thank you for filling out the gecko inquiry form!<br>We have received your submission and will respond as soon as possible.</p>
     </main>
     <footer>
         <div class="socials">
@@ -48,4 +65,5 @@
         </div>
     </footer>
 </body>
+<script src="../js/inquire.js"></script>
 </html>
