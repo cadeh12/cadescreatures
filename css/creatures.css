@@ -43,6 +43,7 @@ main {
 .geck:hover {
     scale: 1.75;
     transition: scale 0.25s ease-in-out;
+    z-index: 1;
 }
 
 .name {
