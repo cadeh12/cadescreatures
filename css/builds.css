@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100vw;
+}
+
+:root {
+    --cambridge-blue: #9DBEBB;
+    --princeton-orange: #FF9000;
+    --prussian-blue: #031926;
+    --desert-sand: #D7B29D;
+    --ebony: #5A6650;
+}
+
+body {
+    background-image: url("../img/hero-background.png");
+    background-size: cover;
+}
+
+main {
+    min-height: 100vh;
+    width: 90%;
+    margin: 2rem auto;
+}
+
+h1 {
+    text-align: center;
+    color: var(--desert-sand);
+    font-family: "Montserrat Alternates", sans serif;
+    font-size: clamp(2rem, 3vw, 3rem);
+    margin-bottom: 2rem;
+}
+
+.builds {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.build {
+    color: var(--desert-sand);
+    font-family: "Montserrat Alternates", sans serif;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.left {
+    width: 45%;
+}
+
+.right {
+    width: 50%;
+}
+
+.build-pic {
+    width: 45%;
+    height: 40%;
+    box-shadow: 0 10px 10px 10px rgba(0 0 0 / 25%);
+}
+
+.ikea {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.ikea .build-pic {
+    width: 80%;
+}
+
+.horiz {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#bump {
+    margin-top: 4rem;
+}
+
+@media screen and (max-width: 700px) {
+    .builds {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .right {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

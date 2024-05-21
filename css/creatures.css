@@ -37,6 +37,7 @@ main {
     font-family: "Montserrat Alternates", sans serif;
     color: white;
     transition: scale 0.25s ease-in-out;
+    box-shadow: 0 10px 10px 10px rgba(0 0 0 / 25%);
 }
 
 .geck:hover {
@@ -231,6 +232,7 @@ main {
     }
     .geck {
         width: 100%;
+        z-index: -1;
     }
     .geck:hover {
         scale: 1;
