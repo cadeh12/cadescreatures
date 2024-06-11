@@ -80,6 +80,15 @@ h1 {
     margin-top: 4rem;
 }
 
+.build-info {
+    background-color: var(--desert-sand);
+    color: var(--prussian-blue);
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: "Montserrat Alternates", sans serif;
+    margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 700px) {
     .builds {
         flex-direction: column;

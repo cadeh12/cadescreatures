@@ -185,7 +185,7 @@ button:hover {
 .gen-imgs {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: -4rem;
     margin-bottom: -3rem;
 }
