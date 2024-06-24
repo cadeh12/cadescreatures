@@ -60,12 +60,12 @@ button:hover {
     cursor: pointer;
 }
 
-.abt-encl {
+.avail-encl {
     display: flex;
     flex-direction: row;
 }
 
-.about {
+.available {
     background-color: var(--prussian-blue);
     width: 30%;
     display: flex;
@@ -75,7 +75,7 @@ button:hover {
     padding: 1rem;
 }
 
-.meet {
+.market {
     color: var(--cambridge-blue);
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: bold;
@@ -83,8 +83,10 @@ button:hover {
     text-align: center;
 }
 
-.abt-pic {
+.chest {
     width: 80%;
+    margin-bottom: 1rem;
+    box-shadow: 0 10px 10px 10px rgba(0 0 0 / 25%);
 }
 
 .builds {
