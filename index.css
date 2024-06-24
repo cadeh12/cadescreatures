@@ -235,14 +235,14 @@ button:hover {
     .hero-image {
         width: 80%;
     }
-    .abt-encl {
+    .avail-encl {
         display: flex;
         flex-direction: column;
     }
-    .about {
+    .available {
         width: 100%;
     }
-    .meet {
+    .market {
         font-size: clamp(2.5rem, 2vw, 3.5rem);
     }
     .builds {
